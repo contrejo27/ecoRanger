@@ -113,21 +113,18 @@
                     <group eventID="4" id="-1">
                         <create-actor3 comment="false" x="37" y="70">
                             <actortype eid="70" id="0"/>
-                            <randint comment="false" id="1" x="0" y="0">
-                                <int id="0" val="-50"/>
-                                <int id="1" val="-20"/>
-                            </randint>
-                            <int id="2" val="-10"/>
+                            <int id="1" val="-120"/>
+                            <int id="2" val="-250"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <ignore-screen-tolerance comment="false" x="37" y="102">
+                        <ignore-screen-tolerance comment="false" x="37" y="97">
                             <ACTOR eid="lastcreated" id="0"/>
                         </ignore-screen-tolerance>
-                        <backforward comment="false" x="37" y="129">
+                        <backforward comment="false" x="37" y="124">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="2"/>
                         </backforward>
-                        <say-this comment="false" x="37" y="156">
+                        <say-this comment="false" x="37" y="151">
                             <int id="0" val="treeType"/>
                         </say-this>
                     </group>
@@ -136,10 +133,10 @@
                         <int id="1" val="50"/>
                     </less>
                 </if>
-                <set-val-53-2 comment="false" x="26" y="188">
+                <set-val-53-2 comment="false" x="26" y="183">
                     <int id="0" val="0"/>
                 </set-val-53-2>
-                <set-val-53-4 comment="false" x="26" y="208">
+                <set-val-53-4 comment="false" x="26" y="203">
                     <randint comment="false" id="0" x="0" y="0">
                         <get-val-53-6 comment="false" id="0" x="0" y="0"/>
                         <get-val-53-7 comment="false" id="1" x="0" y="0"/>
@@ -149,7 +146,12 @@
             <int id="0" val="leftTrees"/>
         </event-custom>
     </group>
-    <group eventID="4" id="-1"/>
+    <group eventID="4" id="-1">
+        <randint comment="false" x="166" y="382">
+            <int id="0" val="-120"/>
+            <int id="1" val="-80"/>
+        </randint>
+    </group>
     <group eventID="5" id="0">
         <event-custom comment="false" x="15" y="15">
             <group eventID="5" id="-1">
@@ -157,21 +159,18 @@
                     <group eventID="5" id="-1">
                         <create-actor3 comment="false" x="37" y="83">
                             <actortype eid="70" id="0"/>
-                            <randint comment="false" id="1" x="0" y="0">
-                                <int id="0" val="230"/>
-                                <int id="1" val="270"/>
-                            </randint>
-                            <int id="2" val="-10"/>
+                            <int id="1" val="220"/>
+                            <int id="2" val="-110"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <ignore-screen-tolerance comment="false" x="37" y="115">
+                        <ignore-screen-tolerance comment="false" x="37" y="110">
                             <ACTOR eid="lastcreated" id="0"/>
                         </ignore-screen-tolerance>
-                        <backforward comment="false" x="37" y="142">
+                        <backforward comment="false" x="37" y="137">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="2"/>
                         </backforward>
-                        <say-this comment="false" x="37" y="169">
+                        <say-this comment="false" x="37" y="164">
                             <int id="0" val="treeType"/>
                         </say-this>
                     </group>
@@ -185,10 +184,10 @@
                         </plus>
                     </less>
                 </if>
-                <set-val-53-8 comment="false" x="26" y="201">
+                <set-val-53-8 comment="false" x="26" y="196">
                     <int id="0" val="0"/>
                 </set-val-53-8>
-                <set-val-53-5 comment="false" x="26" y="221">
+                <set-val-53-5 comment="false" x="26" y="216">
                     <randint comment="false" id="0" x="0" y="0">
                         <get-val-53-6 comment="false" id="0" x="0" y="0"/>
                         <get-val-53-7 comment="false" id="1" x="0" y="0"/>
@@ -198,7 +197,12 @@
             <int id="0" val="rightTrees"/>
         </event-custom>
     </group>
-    <group eventID="5" id="-1"/>
+    <group eventID="5" id="-1">
+        <randint comment="false" x="213" y="322">
+            <int id="0" val="230"/>
+            <int id="1" val="270"/>
+        </randint>
+    </group>
     <group eventID="6" id="0">
         <event-custom comment="false" x="15" y="15">
             <group eventID="6" id="-1">

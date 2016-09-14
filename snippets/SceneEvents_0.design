@@ -54,13 +54,16 @@
                 <set-game-val-21 comment="false" x="26" y="105">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-21>
-                <setanim comment="false" x="26" y="130">
+                <set-game-val-0 comment="false" x="26" y="130">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-0>
+                <setanim comment="false" x="26" y="155">
                     <ACTOR eid="1" id="0"/>
                     <int id="1" val="Animation Up"/>
                 </setanim>
-                <dolater comment="false" x="26" y="157">
+                <dolater comment="false" x="26" y="182">
                     <group eventID="4" id="-1">
-                        <setanim comment="false" x="37" y="184">
+                        <setanim comment="false" x="37" y="209">
                             <ACTOR eid="1" id="0"/>
                             <int id="1" val="Animation Up"/>
                         </setanim>
@@ -68,7 +71,7 @@
                     <int id="0" val="0.5"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <play-sound-channel comment="false" x="26" y="223">
+                <play-sound-channel comment="false" x="26" y="248">
                     <int id="0" val="1"/>
                     <sound eid="103" id="1"/>
                     <int id="2" val="5"/>
@@ -79,8 +82,31 @@
     <group eventID="4" id="-1"/>
     <group eventID="7" id="0">
         <draw comment="false" x="15" y="15">
-            <group eventID="7" id="-1"/>
+            <group eventID="7" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="Fuel Bar goes lower as player health goes down"/>
+                </comment-short>
+                <print comment="false" x="26" y="60">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="PlayerHealth for Level1: "/>
+                        <int id="1" val=""/>
+                    </str-combine>
+                </print>
+            </group>
         </draw>
+    </group>
+    <group eventID="7" id="2">
+        <set-xy comment="false" x="66" y="186">
+            <ACTOR eid="5" id="0"/>
+            <int id="1" val="1"/>
+            <plus comment="false" id="2" x="0" y="0">
+                <int id="0" val="120"/>
+                <times comment="false" id="1" x="0" y="0">
+                    <get-val-0-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="1.8"/>
+                </times>
+            </plus>
+        </set-xy>
     </group>
     <group eventID="7" id="-1"/>
     <group eventID="9" id="0">

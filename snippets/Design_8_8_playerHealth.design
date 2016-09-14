@@ -165,6 +165,35 @@
             </group>
         </step>
     </group>
+    <group eventID="3" id="6">
+        <if comment="false" x="89" y="401">
+            <group eventID="3" id="-1">
+                <create-bglayer-from-bg comment="false" x="100" y="431">
+                    <int id="0" val="UIEnd"/>
+                    <int id="1" val="UIEnd"/>
+                    <int id="2" val="6"/>
+                </create-bglayer-from-bg>
+                <create-actor3 comment="false" x="100" y="451">
+                    <actortype eid="51" id="0"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="50"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <create-actor3 comment="false" x="100" y="478">
+                    <actortype eid="49" id="0"/>
+                    <int id="1" val="80"/>
+                    <int id="2" val="80"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-8-11 comment="false" x="100" y="505">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-8-11>
+            </group>
+            <not comment="false" id="0" x="0" y="0">
+                <get-val-8-11 comment="false" id="0" x="0" y="0"/>
+            </not>
+        </if>
+    </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <event-custom comment="false" x="15" y="15">
